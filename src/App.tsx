@@ -8,26 +8,38 @@ const App = () => {
   const [expenses, setExpenses] = useState([
     {
       id: 1,
-      description: 'aaa',
-      amount: 10,
+      description: 'Battery',
+      amount: 18,
       category: 'Utilities',
     },
     {
       id: 2,
-      description: 'bbb',
-      amount: 10,
+      description: 'Battery2',
+      amount: 18,
       category: 'Utilities',
     },
     {
       id: 3,
-      description: 'ccc',
-      amount: 10,
-      category: 'Utilities',
+      description: 'Potatoes',
+      amount: 55,
+      category: 'Groceries',
     },
     {
       id: 4,
+      description: 'Potatoes2',
+      amount: 55,
+      category: 'Groceries',
+    },
+    {
+      id: 5,
       description: 'Movies',
-      amount: 10,
+      amount: 30,
+      category: 'Entertainment',
+    },
+    {
+      id: 6,
+      description: 'Movies1',
+      amount: 30,
       category: 'Entertainment',
     },
   ])
