@@ -4,7 +4,7 @@ import ExpenseForm from './components/ExpenseForm'
 import ExpenseList from './components/ExpenseList'
 
 const App = () => {
-  const [selectedCategory, setSelectedCategory] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('Utilities')
   const [expenses, setExpenses] = useState([
     {
       id: 1,
@@ -57,6 +57,7 @@ const App = () => {
       </div>
       <div className='mb-3'>
         <ExpenseFilter
+          defaultCat={selectedCategory}
           onSelectCategory={category => setSelectedCategory(category)}
         />
       </div>

@@ -1,12 +1,14 @@
 import categories from '../categories'
 interface Props {
   onSelectCategory: (category: string) => void
+  defaultCat: string
 }
 
-const ExpenseFilter = ({ onSelectCategory }: Props) => {
+const ExpenseFilter = ({ onSelectCategory, defaultCat }: Props) => {
   return (
     <select
       className='form-select'
+      defaultValue={defaultCat}
       onChange={event => onSelectCategory(event.target.value)}
     >
       <option value=''>All Categories</option>
